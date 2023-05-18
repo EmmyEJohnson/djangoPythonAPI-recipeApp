@@ -3,23 +3,24 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
 
 # Linting:
+
+  docker-compose run --rm app sh -c "flake8"
+
   - Install flake8 package
   - Run flake8 through Docker Compose 
-
-
-      docker-compose run --rm app sh -c "flake8"
 
 # Create Django Project with Docker Compose:
 
     docker-compose run --rm app sh -c "django-admin startproject app ."
 
 # Testing:
+
+  docker-compose run --rm app sh -c "python manage.py test"
+
   - Django test suite
   - Setup tests per django app
   - Run tests through Docker Compose
 
-
-      docker-compose run --rm app sh -c "python manage.py test"
 
 
 
@@ -36,10 +37,9 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
 # Using Docker Compose:
 
-  - Run all commands throuigh Docker Compose
+  docker-compose run --rm app sh -c "python manage.py collectstatic"
   
-
-      docker-compose run --rm app sh -c "python manage.py collectstatic"
+  - Run all commands throuigh Docker Compose
 
 # Using Docker with Django:
 
