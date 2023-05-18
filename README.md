@@ -2,15 +2,16 @@
 Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Docker, and Swagger UI for the automated documentation for API
 
 
-Linting:
+# Linting:
   Install flake8 package
   Run flake8 through Docker Compose 
       docker-compose run --rm app sh -c "flake8"
 
-Create Django Project with Docker Compose:
+# Create Django Project with Docker Compose:
+
     docker-compose run --rm app sh -c "django-admin startproject app ."
 
-Testing:
+# Testing:
   Django test suite
   setup tests per django app
   run tests through Docker Compose
@@ -21,7 +22,7 @@ Testing:
 
 
 
-Docker:
+# Docker:
   Consistent dev and prod environment
   Easier collaboration
   Capture all dependencies as code
@@ -29,18 +30,23 @@ Docker:
     operationg system dependencies
   Easier cleanup
 
-Using Docker Compose:
+# Using Docker Compose:
+
   Run all commands throuigh Docker Compose
       docker-compose run --rm app sh -c "python manage.py collectstatic"
 
-Using Docker with Django:
+# Using Docker with Django:
+
   Benefits:
+
     Consistent dev and prod environment
     Easier collaboration
     Capture all dependencies as code
     Easier cleanup
     Save time
+
   Drawbacks:
+
     VSCode unable to access interpreter
     More difficult to use integrated features
     Use terminal
