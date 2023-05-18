@@ -13,6 +13,12 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
     docker-compose run --rm app sh -c "django-admin startproject app ."
 
+# Start Services:
+
+    docker-compose up
+
+  - To see if server is working correctly in browser go to http://127.0.0.1:8000
+
 # Testing:
 
     docker-compose run --rm app sh -c "python manage.py test"
