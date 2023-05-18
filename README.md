@@ -4,7 +4,7 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
 # Linting:
 
-  docker-compose run --rm app sh -c "flake8"
+    docker-compose run --rm app sh -c "flake8"
 
   - Install flake8 package
   - Run flake8 through Docker Compose 
@@ -15,7 +15,7 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
 # Testing:
 
-  docker-compose run --rm app sh -c "python manage.py test"
+    docker-compose run --rm app sh -c "python manage.py test"
 
   - Django test suite
   - Setup tests per django app
@@ -37,22 +37,20 @@ Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Dock
 
 # Using Docker Compose:
 
-  docker-compose run --rm app sh -c "python manage.py collectstatic"
-  
+    docker-compose run --rm app sh -c "python manage.py collectstatic"
+
   - Run all commands throuigh Docker Compose
 
 # Using Docker with Django:
 
   Benefits:
-
-    Consistent dev and prod environment
-    Easier collaboration
-    Capture all dependencies as code
-    Easier cleanup
-    Save time
+  - Consistent dev and prod environment
+  - Easier collaboration
+  - Capture all dependencies as code
+  - Easier cleanup
+  - Save time
 
   Drawbacks:
-
-    VSCode unable to access interpreter
-    More difficult to use integrated features
-    Use terminal
+  - VSCode unable to access interpreter
+  - More difficult to use integrated features
+  - Use terminal
