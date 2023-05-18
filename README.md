@@ -1,10 +1,14 @@
 # Django and Python Recipe API App
 Recipe API Project using Django, Django REST framework, Python, PostgreSQL, Docker, and Swagger UI for the automated documentation for API
 
+
 Linting:
   Install flake8 package
   Run flake8 through Docker Compose 
       docker-compose run --rm app sh -c "flake8"
+
+Create Django Project with Docker Compose:
+    docker-compose run --rm app sh -c "django-admin startproject app ."
 
 Testing:
   Django test suite
